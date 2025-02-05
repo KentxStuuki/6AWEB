@@ -1,0 +1,90 @@
+<!-- <div class="container">
+Parameters in Date
+  <h3>Parameters in Date with pipe</h3>
+  <p>This is a short date: {{ presentDate | date: 'shortDate' }}</p>
+  <p>This line shows the full date: {{presentDate | date:'fullDate'}}</p>
+  <p>This will show a formatted date: {{presentDate | date:'M/dd/yyyy'}}</p>
+  <p>
+    This indicates the hour s and minutes: {{presentDate | date: 'h:mm'}}
+  </p>
+  <hr>
+  <h3>Chained pipes</h3>
+  <p>Date with uppercase: {{presentDate | date:'fullDate' | uppercase}}</p>
+  <p>Date with lowercase: {{presentDate | date:'fullDate' | lowercase}}</p>
+
+  <hr>
+  <h3>AsyncPipe</h3>
+  <p>Seconds changing in Time: {{ time$ | async | date:'mediumTime'}}</p>
+
+  <hr>
+  <h3>JsonPipe</h3>
+  <p>Object: {{ testObject }}</p>
+  <p>Object with JsonPipe: {{ testObject | json}}</p>
+
+  <hr>
+  <h3>Currency Pipe</h3>
+  <p>{{ price | currency:'':true}}</p>
+  <p>{{ price | currency: 'INR' }}</p>
+
+  <hr>
+  <h3>SlicePipe</h3>
+  <p>All of the fruits: {{ Fruits }}</p>
+  <p>Start index: {{Fruits | slice:2}}</p>
+  <p>Start and end index: {{ Fruits | slice:1:4}}</p>
+  <p>Negative index: {{ Fruits | slice:-2}}</p>
+  <p>Negative start and end index: {{ Fruits | slice:-4:-2}}</p>
+
+  <hr>
+  <h3>Decimal Pipe</h3>
+  <p>{{decimalNum1 | number}}</p>
+  <p>{{decimalNum2 | number}}</p>
+
+  <h3>Modified formats</h3>
+  <p> Apply formating: {{decimalNum1 | number: '3.1'}}</p>
+  <p>{{decimalNum2 | number: '2.1-4'}}</p>
+
+  <hr>
+  <h3>Experemntal codes: </h3>
+  <p>TObject with JsonPipe in uppercase: {{ testObject | json | uppercase}}</p>
+
+  
+</div> -->
+<h2>Mark Erolle D. Quiambao</h2>
+<h4>1. Date Pipes (40 points)</h4>
+<p>Format the currentDate variable (2024-01-26T15:30:45) using the date pipe.</p>
+{{ currentDate | date:'shortDate' }} <br>
+{{ currentDate | date:'fullDate' }} <br>
+{{ currentDate | date:'MM/dd/yyyy' }} <br>
+{{ currentDate | date:'shortTime' }}  <br>
+{{ currentDate | date:'d' }} <br>
+{{ currentDate | date:'w' }} <br>
+<hr>
+
+<h4>2. Currency Pipes (24 points)</h4>
+<p>Format the price variable (42.42424242) using the currency pipe.</p>
+{{ price | currency:'USD':'symbol':'1.2-2' }} <br>
+{{ price | currency:'USD':'code':'1.2-2' }} <br>
+{{ price | currency:'INR':'symbol':'1.2-2' }} <br>
+{{ price | currency:'GBP':'symbol':'1.2-2' }} <br>
+
+<hr>
+<h4>3. Async Pipes (25 points)</h4>
+<p>FHandle asynchronous data streams using the async pipe.</p>
+{{ arrayStream$ | async }} <br>
+{{ transformedData$ | async }} <br>
+
+<hr>
+<h4>4. JSON Pipes (30 points)</h4>
+<p>Use the json pipe to format the provided data structures.</p>
+{{ nestedArrays | json }} <br>
+{{ complexData | json }} <br>
+{{ mixedTypes | json }}<br>
+
+<hr>
+<h4>5. Slice Pipes (34 points)</h4>
+<p>Use the slice pipe to extract specific portions of arrays or strings.</p>
+{{ numbers | slice:3:6 }} <br>
+{{ numbers | slice:-3 }} <br>
+{{ longString | slice:-2 }} <br>
+{{ longString | slice:0:5 }} <br>
+<router-outlet />
