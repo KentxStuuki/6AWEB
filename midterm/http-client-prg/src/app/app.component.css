@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.List-header{
+    padding: 4% 0 0 0;
+    margin: 0 auto;
+    width: 90%;  
+    font-weight: bold;
+}
+
+.Loader{
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid;
+    padding: 0.4% 1%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table-container{
+    margin: 0 auto;
+    width: 90%;    
+}
+
+.table-header, .table-body{
+    text-align: left;
+}
