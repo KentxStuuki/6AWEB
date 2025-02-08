@@ -23,6 +23,14 @@ table {
     border-collapse: collapse;
 }
 
+.table-header th{
+    background-color: #000;
+}
+
+th{
+    color: #fff;
+}
+
 .table-container{
     margin: 0 auto;
     width: 90%;    
@@ -31,3 +39,12 @@ table {
 .table-header, .table-body{
     text-align: left;
 }
+
+.table-body tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+.table-body tr:hover {
+    background-color: #ca65f2;
+}
+
