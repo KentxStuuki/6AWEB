@@ -1,0 +1,54 @@
+<header class="header-container">
+    <div class="back-btn">
+        <a routerLink='/'>&#8592;Back</a>
+    </div>
+    <nav class="navbar-header">
+        <ul>
+        <li><a routerLink='/template-driven'>Template Driven</a></li>
+        <li><a routerLink='/reactive-form'>Reactive Form</a></li>
+        <li><a routerLink='/validation-demo' >Valodation Demo</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="form-container">
+    <h1>Welcome To Finals Lab Activity 2: Reactive Form Demo</h1>
+    <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+
+    <label for="fname">First Name</label>
+    <input class="input-box" type="text" name="fname" formControlName="fname" placeholder="Input your First name" required>
+
+    <label for="lname">Last Name</label>
+    <input class="input-box" type="text" name="lname"  formControlName="lname"  placeholder="Input your last name" required>
+
+    <label for="email">Email</label>
+    <input class="input-box" type="email" name="email"  formControlName="email"  placeholder="name@email.com" required>
+
+    <label for="message">Message</label>
+    <textarea class="input-box" type="text" name="message"  formControlName="message"  placeholder="Write anything..." required style="height: 100px;"></textarea>
+
+    <input class="nav-btn" type="Submit" value="Click here">
+    </form>
+</div>
+<hr>
+
+<div class="useroutput-container">
+    <h2> The User Output Reactive Form Demo</h2>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <td>{{fname}}</td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td>{{lname}}</td>
+        <tr>
+            <th>Email</th>
+            <td>{{email}}</td>
+        </tr>
+        <tr>
+            <th>Message</th>
+            <td>{{message}}</td>
+        </tr>
+    </table>
+</div>
