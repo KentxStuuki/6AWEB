@@ -1,6 +1,15 @@
 # 6AWEB
 This Repo is dedicated to hold all of my progress inside the 6AWEB subject
 
+## Finals Activities
+- Finals Lab Activity 1: [Template-Driven Form Demo](https://github.com/KentxStuuki/6AWEB/tree/main/final/finals-project/src/app/template-driven)
+- Finals Lab Activity 2: [Reactive Form Demo](https://github.com/KentxStuuki/6AWEB/tree/main/final/finals-project/src/app/reactive-form)
+- Finals Lab Activity 3: [Reactive Form with Validation Demo](https://github.com/KentxStuuki/6AWEB/tree/main/final/finals-project/src/app/validation-demo)
+
+## Midterms Activities
+
+## Finals Activities
+
 # Angular Codes to install and create
 To install angular in your device type:
 >npm install -g @angular/cli@18
