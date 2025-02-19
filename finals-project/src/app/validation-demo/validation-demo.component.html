@@ -1,0 +1,37 @@
+
+<div class="form-container">
+    <h1>Welcome To Finals Lab Activity 3: Reactive Form with Validation Demo</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <label for="email">Email</label>
+        <input class="input-box" type="email" name="email" id="email" formControlName="email">
+        <div *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched" class="error">
+            Email is required and must be a valid email address.
+        </div>
+        
+        <div>
+            <label for="password">password</label>
+            <input class="input-box" type="password" name="email" id="email" formControlName="password">
+            <div *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched" class="error">
+                Password is required and must be at least 6 character long.
+            </div>
+        </div>
+        
+        <button class="btn" type="submit" value="submit" [disabled]="loginForm.invalid">Submit</button>
+    </form>
+</div>
+<hr>
+<div class="useroutput-container">
+    <h2> The User Output for Reactive Form with Validation Demo</h2>
+    <table>
+        <tr>
+            <th>Email</th>
+            <td>{{ loginForm.controls['email'].value }}</td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td>{{ loginForm.controls['password'].value }}</td>
+    </table>
+</div>
+  
+
+
