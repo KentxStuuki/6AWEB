@@ -11,7 +11,7 @@ This Repo is dedicated to hold all of my progress inside the 6AWEB subject
 
 ## Midterms Activities
 
-## Finals Activities
+## Prelims Activities
 
 # Angular Codes to install and create
 To install angular in your device type:
