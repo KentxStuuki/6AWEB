@@ -3,7 +3,8 @@ This Repo is dedicated to hold all of my progress inside the 6AWEB subject
 
 ## Finals Activities
 
-
+- Finals Lab Activity 5: [Angular Material Hands-on-Challenge](https://github.com/KentxStuuki/6AWEB/tree/main/final/angular_mat_challenge)
+- Finals Lab Activity 4: [Angular Material Hands-on-Demo](https://github.com/KentxStuuki/6AWEB/tree/main/final/angular_mat)
 - Finals Lab Activity 3: [Reactive Form with Validation Demo](https://github.com/KentxStuuki/6AWEB/tree/main/final/finals-project/src/app/validation-demo)
 - Finals Lab Activity 2: [Reactive Form Demo](https://github.com/KentxStuuki/6AWEB/tree/main/final/finals-project/src/app/reactive-form)
 - Finals Lab Activity 1: [Template-Driven Form Demo](https://github.com/KentxStuuki/6AWEB/tree/main/final/finals-project/src/app/template-driven)
