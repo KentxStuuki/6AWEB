@@ -1,0 +1,27 @@
+<h1>Books Application</h1>
+
+<div class="form-container">
+        <input id="newBook" placeholder="Title">
+        <input id="newDesc" placeholder="Description">
+        <input id="newPrice" placeholder="Book Price">
+        <button (click)="addBook()">Add book</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td>{{book.title}}</td>
+                <td>{{book.desc}}</td>
+                <td>{{book.price}}</td>
+                <td><button (click)="deleteBook(book.id)">Delete book</button></td>
+            </tr>
+        </tbody>
+</table>
